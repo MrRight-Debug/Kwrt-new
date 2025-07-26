@@ -7,4 +7,4 @@ sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 sed -i 's/OpenWrt/Kwrt/g' package/base-files/files/bin/config_generate
 
 # 设置alpha为默认主题
-sed -i 's/luci-theme-bootstrap/luci-theme-alpha/g' feeds/luci/collections/luci/Makefile
+#sed -i 's/luci-theme-bootstrap/luci-theme-alpha/g' feeds/luci/collections/luci/Makefile
