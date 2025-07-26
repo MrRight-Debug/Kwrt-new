@@ -8,11 +8,3 @@ sed -i 's/OpenWrt/Kwrt/g' package/base-files/files/bin/config_generate
 
 # 设置alpha为默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-alpha/g' feeds/luci/collections/luci/Makefile
-cat << "EOF" > package/base-files/files/etc/uci-defaults/80-theme
-#!/bin/sh
-uci set luci.main.mediaurlbase='/luci-static/alpha'
-uci commit luci
-rm -rf /tmp/luci-*
-exit 0
-EOF
-chmod +x package/base-files/files/etc/uci-defaults/80-theme
